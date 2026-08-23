@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Backgrounds */
+  --bg-base:       #0d0f14;   /* page background */
+  --bg-surface:    #13161e;   /* cards, sidebar */
+  --bg-elevated:   #1a1e2a;   /* modals, dropdowns */
+  --bg-hover:      #1f2436;
+  --bg-active:     #252a3a;
+
+  /* Brand */
+  --brand:         #7c6ff7;   /* primary purple */
+  --brand-dim:     #5a52d5;
+  --brand-glow:    rgba(124,111,247,0.15);
+
+  /* Text */
+  --text-primary:  #e8eaf0;
+  --text-secondary:#9096a8;
+  --text-muted:    #565d72;
+
+  /* Platform colours */
+  --steam:         #1b2838;
+  --steam-text:    #c7d5e0;
+  --epic:          #2a2a2a;
+  --epic-text:     #ffffff;
+  --xbox:          #107c10;
+  --xbox-text:     #ffffff;
+  --gog:           #7b2fbe;
+  --gog-text:      #ffffff;
+
+  /* Semantic */
+  --success:       #22c55e;
+  --warning:       #f59e0b;
+  --danger:        #ef4444;
+  --info:          #3b82f6;
+
+  /* Borders */
+  --border:        rgba(255,255,255,0.07);
+  --border-strong: rgba(255,255,255,0.14);
+
+  /* Spacing scale */
+  --sidebar-width: 220px;
+  --topbar-height: 56px;
+  --radius-sm:     6px;
+  --radius-md:     10px;
+  --radius-lg:     14px;
+  --radius-xl:     20px;
+}
+
+body {
+  background-color: var(--bg-base);
+  color: var(--text-primary);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
